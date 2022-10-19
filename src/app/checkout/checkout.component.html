@@ -1,0 +1,146 @@
+
+<section class="page-title">
+    <div class="container" >
+        <div class="row">
+            <div class="col">
+				<h1><nav class="woocommerce-breadcrumb"><a style="color:#1ABC9C">Home</a><a style="color:grey">&nbsp;/&nbsp;Checkout</a>&nbsp;</nav></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color:#f2f4f1;margin-bottom: -50px;">  
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="single-page">
+                    <div class="woocommerce">
+                        <div class="woocommerce-info" style="font-size:large;font-weight:bold;">
+                            <br>
+                              Returning customer? &nbsp;<a href="login" class="login">click here to login</a></div><div style="font-size:large;font-weight:bold;margin-bottom: 15px;">
+                                Go Back ?  &nbsp;<a href="" class="cart">Go to cart</a></div></div>
+
+
+        <form action="" [formGroup]="checkoutForm" (ngSubmit)="submitHandler()" style="margin-bottom: 100px;">
+            <br><h3> Billing Details</h3>   
+            <div class="form-group">
+                    <label class="label">Name<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" required formControlName="name" placeholder="Enter name">
+                       <span class="Focus-border"></span>
+                       <br>  
+                       <label class="error ng-binding" *ngIf="submitted && f['name'].invalid" style="color: red;">Name is required
+                    </label>          
+                   </div><br>
+                   <!-- <div class="field ">
+                    <label class="label">Last Name<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" required >
+                       <span class="Focus-border"></span>            
+                   </div><br>
+                   <div class="field ">
+                    <label class="label">Company Name</label><br>
+                     <input type="text" name="name" class="input" value size="40" required >
+                       <span class="Focus-border"></span>            
+                   </div><br> -->
+                   <div class="field ">
+                    <label class="label">Email Address<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" required formControlName="email" placeholder="Enter email">
+                       <span class="Focus-border"></span> 
+                       <br> 
+                       <label class="error ng-binding" *ngIf="submitted && f['email'].invalid" style="color: red;">Email is required
+                    </label>          
+                   </div><br>
+                   <div class="field ">
+                    <label class="label">Phone<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" required formControlName="phone" placeholder="Enter number">
+                       <span class="Focus-border"></span>  
+                       <br>
+                       <label class="error ng-binding" *ngIf="submitted && f['phone'].invalid" style="color: red;">Number is required
+                    </label>           
+                   </div><br>
+                   <div class="field">
+                    <label class="label">Address<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input " value size="40" placeholder="Street address"  required formControlName="address" placeholder="Enter address">
+                     <br>
+                     <label class="error ng-binding" *ngIf="submitted && f['address'].invalid" style="color: red;">Address is required
+                    </label>  
+                     <br>
+                     <br>
+                               
+                   <!-- </div><br>
+                   <div class="field">
+                    <label class="label">Country<span style="color: red;font-weight:bold;">*</span> </label><br> INDIA<br>
+                    <br> -->
+                   </div>
+                   <!-- <div class="field">
+                    <label class="label">Town/city<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" placeholder="Town/city" required >
+                       <span class="Focus-border"></span>            
+                   </div><br> -->
+                   <!-- <div class="field">
+                    <label class="label">State/Country<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" placeholder="State name" required >
+                       <span class="Focus-border"></span>            
+                   </div><br> -->
+                   <div class="field">
+                    <label class="label">Pincode/Zip<span style="color: red;font-weight:bold;">*</span> </label><br>
+                     <input type="text" name="name" class="input" value size="40" required formControlName="pincode" placeholder="Enter pincode">
+                       <span class="Focus-border"></span>  
+                       <br>
+                       <label class="error ng-binding" *ngIf="submitted && f['pincode'].invalid" style="color: red;">Pincode is required
+                    </label>           
+                   </div><br>
+                   <div style="margin-left:500px; margin-top:-470px;">
+                   <h3>Additional Information</h3>
+                   <div class="field">
+                    <label class="label">Pickup Date<span style="color: red;font-weight:bold;">*</span> </label><br>
+                    <input type="date" name="name" class="input" value size="40" placeholder="mention pickup date" required formControlName="pickup">
+                       <span class="Focus-border"><br><h6>Please give a date for your Pickup</h6></span>  
+                       <br>  
+                       <label class="error ng-binding" *ngIf="submitted && f['pickup'].invalid" style="color: red;">Pickup is required
+                    </label>          
+                   </div><br>
+                   <h3>Additional Information</h3>
+                   <div class="field">
+                    <label class="label">Order notes </label><br>
+                    <textarea name="message" style="border-width:0.4vh;" placeholder="Notes about your order,e.g.Special notes for delivery. "   class="textarea" required value size="40" col="40" row="10" aria-required="true" aria-invalid="true" formControlName="notes"></textarea>                
+                       <span class="Focus-border"></span> 
+                       <br> 
+                       <label class="error ng-binding" *ngIf="submitted && f['notes'].invalid" style="color: red;">Notes is required
+                    </label>           
+                   </div>
+                </div>
+                   <br>
+                   <a class="btn" style="color:white;margin-top: 100px;background-color:#1ABC9C;"  href="https://rzp.io/i/783KMkD" target="_blank" >Payment</a>
+                   <button type="submit" class="btn btn-sm btn-danger" style="margin-top: 30px;margin-left: 800px;">Place Order</button>
+        </form>
+    </div></div>
+</div></div>
+</section>
+
+<div style="background-color: white;"><br><br><br><br>
+  <div style="background-color: rgb(28, 174, 148);" class="row">
+      <br><br><br>
+      <div class="col-sm">
+          <p style="color:white;margin-left:70px;">Copyright 2015 - 2022 © fabstitch.in</p>
+      </div>
+      <div class="col-sm">
+          <ul>
+              <a href="#" style=" color: rgb(255, 255, 255);" class="home">FAQ</a>
+              |
+              <a href="terms-of-services" style=" color: rgb(255, 255, 255);">Terms of Services </a>
+              |
+              <a href="privacy-policy" style="color: rgb(255, 255, 255);">Privacy Policy </a>
+              | 
+              <a style="color: rgb(255, 255, 255);">Call us @ +91-9902953403</a>
+          
+          </ul> 
+
+      </div>
+  </div>
+</div>
+
+
+<!-- <br><br><br><br><br>
+<div style="background-color:#1ABC9C;padding-bottom: 30px;">
+  <p style="margin-left: 50px;">Copyright 2015 - 2022 © fabstitch.in  <a href="/faq" style="padding-left: 400px;">FAQ</a> | <a href="/terms-of-services">Terms Of Services</a> | <a href="/privacy-policy">Privacy Policy</a> | Call us @ +91-9902953403</p>
+</div> -->

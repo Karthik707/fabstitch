@@ -1,0 +1,58 @@
+<div class="mt-5" style="background-image: url(http://www.fabstitch.in/wp-content/uploads/2014/03/twitter-showcase.jpg); padding-top: 25px; padding-bottom: 10px">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+        <div class="login-form" class="formy">
+            <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup</h2>
+                <br>
+               
+                <div class="form-group" style="margin-left: -30px;">
+                     <p><i class="fa-solid fa-user" style="margin-left: 100px;"> </i>Username</p>
+                    <input type="text" class="form-control" name="username" formControlName="username"
+                        placeholder="Enter Username">
+                        
+                    <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
+                    </label>
+                </div>
+                
+                <div class="form-group" style="margin-left: -30px;">
+                    <p><i class="fa-solid fa-envelope"  style="margin-left: 100px;"></i>Email</p>
+                    <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                        placeholder="Enter email">
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+                        </label>
+                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
+                </div>
+                
+                <div class="form-group" style="margin-left: -30px;">
+                    <p><i class="fa-solid fa-key" style="margin-left: 100px;"></i>Password</p>
+                    <input type="password" class="form-control" name="password" formControlName="password"
+                        placeholder="Enter password">
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Password is
+                        required</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                </div>
+                
+                <div class="form-group" style="margin-left: -30px;">
+                    <p><i class="fa-solid fa-phone " style="margin-left: 100px;"></i>Mobile</p>
+                    <input type="text" class="form-control" name="mobile" formControlName="mobile"
+                        placeholder="Enter Mobile number">
+                    <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
+                        is
+                        required</label>
+
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary" style="background-color: white;color:#1ABC9C;margin-left: 70px;">Register</button>
+                <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                    <span class="ms-fs-12 ng-binding">Already have an account?
+                        <a class="secondary ng-binding" href="login" style="color: black;">
+                            Login!
+                        </a>
+                    </span>
+                    
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</div>

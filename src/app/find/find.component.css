@@ -1,0 +1,15 @@
+.g1:hover{
+    
+    color: #1abc9c;
+}
+.btn-custom{
+    border:solid 2px #a9a9a9;
+    color:#babdbc;
+    border-radius: 6px;
+}
+.btn-custom:hover
+{
+    border:solid 2px #09a787;
+    color:#09a787;
+    border-radius: 6px;
+}

@@ -1,0 +1,452 @@
+<!--caurosel-->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://content.jdmagicbox.com/comp/def_content/textile-retailers/shutterstock-781865803-textile-retailers-5-4f9yf.jpg?clr=" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Different brands and Products</h5>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://byshree.com/pub/media/magefan_blog/Banner-1.jpg" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>More Stylish</h5>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.yourstory.com/cs/wordpress/2015/09/yourstory-Fabstitch-feature.jpg" class="d-block w-100" class="image" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Trending fashion</h5>
+          
+        </div>
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!--next section-->
+
+  <div style="background-color: #1ABC9C;">
+      <button  class="btn1" (click)="bookstitch()">BOOK YOUR STITCH NOW</button>
+      <br>
+      <br>
+      <h1 style="text-align:center;font-size:26px;font-family:open sans;line-height:34px;">ONLINE STITCHING / TAILORING SERVICES AT YOUR DOORSTEP FOR WOMEN AND KIDS IN BANGALORE</h1>
+      <br>
+      <br>
+      
+  </div>  
+  <div style="background-color: #f2f4f1;">
+    <h1 style="text-align: center; color:#1ABC9C;padding-top: 20px;padding-bottom: 30px;font-size: 32px; font-family: Montserrat, Arial, sans-serif;font-weight: 600;">HOW IT WORKS</h1>
+  </div>
+
+<!--cards icons-->
+<div class="row">
+<div style="float:left">
+  <div class="card" style="width: 18rem;float: left;margin-left: 18px;">
+    <img class="card-img-top" src="assets/p1.png" alt="Card image cap" style="width: 250px;height:150px; margin-left: 10px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;color: #1ABC9C;" (click)="bookstitch()">  BOOK A STITCH</h5>
+      <p class="card-text">Book a Stitch at Your Home or Office. Select your best preferred pickup date and time.</p>
+      
+     
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;float: left;margin-left: 18px;">
+    <img class="card-img-top" src="assets/p2.png" alt="Card image cap" style="width: 250px;height:150px;margin-left: 10px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center; color: #1ABC9C;">SIZE ME</h5>
+      <p class="card-text">Experienced FabStitch represent ative at every appointment, to size and help you with latest trends.</p>
+      
+      
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;float: left;margin-left: 18px;">
+    <img class="card-img-top" src="assets/p3.png" alt="Card image cap"style="width: 250px;height:150px;" >
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center; color: #1ABC9C;">STITCH IN PROGRESS</h5>
+      <p class="card-text">Our experts ensure that your clothes are getting stitched as per your fitting and size.</p>
+      
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;float: left; margin-left: 18px;">
+    <img class="card-img-top" src="assets/p5.png" alt="Card image cap"style="width: 250px;height:150px;">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center; color: #1ABC9C;">CASH ON DELIVERY</h5>
+      <p class="card-text">Great fit guaranteed, free pickup and delivery. Pay by cash after you received</p>
+      
+    </div>
+  </div>
+</div>
+</div>
+  <br>
+  
+  <!--services-->
+
+  <div style="margin-top:10px;background-color: #f2f4f1;">
+    <h1 style="text-align: center; color:#1ABC9C;padding-top: 20px;padding-bottom: 10px;font-size: 32px; font-family: Montserrat, Arial, sans-serif;font-weight: 600;margin-top: -30px;">SERVICES</h1>
+    <h3 style="margin-left: 20px;color:#1ABC9C;margin-bottom:30px;">Feature Products</h3>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"  style="background-color: #f2f4f1;">
+          
+          
+        <div class="row" *ngFor="let pdetails of productdetails" style="float: left;margin-left: 10px; background-color: #f2f4f1; margin-bottom: 20px;">
+      
+            <div class="col-lg-4">
+              <div class="card" style="width: 18rem; border-radius: 0%; ">
+                  <img [src]="pdetails.img" class="card-img-top" alt="..." height="250" width="500">
+                    <div class="card-body">
+                      <p class="card-title" style="text-align: center;color: grey;font-style: italic;margin-top: -10px;"><strong>{{pdetails.pname}}</strong></p>
+                      <p class="card-text" style="text-align: center;color: #1ABC9C;font-style: italic;margin-top: -10px;">{{pdetails.price}}</p>
+                      <a href="#" class="btn" style="background-color: #1ABC9C;text-align: center;margin-left: 60px;border-radius: 0%;color: white; font-style: italic;">Select Options</a>
+                    </div>
+              </div>
+            </div>
+            </div>
+  
+            
+      </div>
+  
+      <div class="carousel-item "  style="background-color: #f2f4f1;">
+          
+          
+        <div class="row" *ngFor="let pdetails of productdetails1" style="float: left;margin-left: 10px; background-color: #f2f4f1;margin-bottom: 20px;">
+      
+            <div class="col-lg-4"  >
+              <div class="card" style="width: 18rem; border-radius: 0%;">
+                  <img [src]="pdetails.img" class="card-img-top" alt="..." height="250" width="500">
+                    <div class="card-body">
+                      <p class="card-title" style="text-align: center;color: grey;font-style: italic;margin-top: -10px;"><strong>{{pdetails.pname}}</strong></p>
+                      <p class="card-text" style="text-align: center;color: #1ABC9C;font-style: italic;margin-top: -10px;">{{pdetails.price}}</p>
+                      <a href="#" class="btn" style="background-color: #1ABC9C;text-align: center;margin-left: 60px;border-radius: 0%;color: white; font-style: italic;">Select Options</a>
+                    </div>
+              </div>
+            </div>
+            </div>
+  
+            
+      </div>
+    </div>
+  
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+  
+      </div>
+  
+    </div>
+      
+  <!--next section-->
+
+  <div style="background-color:  #1ABC9C;;">
+    <h3 style="text-align: center;padding-top: 20px;color:#fff">WHY CHOOSE FABSTITCH ?</h3>
+    <p style="color:#fff;margin-top: 30px;text-align: center; margin: 0 0 10px;padding-bottom: 50px;padding-top: 30px;">Fabstitch.in is young and vibrant company that aims at providing hassle free and enjoyable tailoring experience with all new designs and patterns with a team of talented designers. We provides amazing tailoring experience with one stop solution for all kind of stitching works. We offering free measurement, pick-up and delivery service with quality and on time delivery.</p>
+  </div>
+
+<!--next section-->
+
+<div style="background-color: #f2f4f1;margin-top: -10px;">
+  <h1 style="text-align: center; color:#1ABC9C;padding-top: 20px;padding-bottom: 20px;font-size: 32px; font-family: Montserrat, Arial, sans-serif;font-weight: 600;">IN THE NEWS</h1>
+  <img src="http://www.fabstitch.in/wp-content/uploads/2015/10/fs_57665-200x67.jpg" width="250" height="80" style="margin-left:50px; margin-bottom:50px;">
+  <img src="http://www.fabstitch.in/wp-content/uploads/2015/10/tp-200x68.png" width="250" height="80" style="margin-left: 50px;margin-bottom:50px;">
+  <img src="http://www.fabstitch.in/wp-content/uploads/2015/09/yo-logo.png" width="250" height="80" style="margin-left: 50px;margin-bottom:50px;">
+  <img src="http://www.fabstitch.in/wp-content/uploads/2015/10/your_story-200x93.png" width="250" height="80" style="margin-left: 50px;margin-bottom:50px;">
+</div>
+  
+
+
+<!--scrolling cards-->
+<!--
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        
+        
+      <div class="row" *ngFor="let pdetails of productdetails" style="float: left;">
+    
+          <div class="col-lg-4"  >
+            <div class="card" style="width: 18rem;">
+                <img [src]="pdetails.img" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{pdetails.pname}}</h5>
+                    <p class="card-text">{{pdetails.pdescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+            </div>
+          </div>
+          </div>
+    <div class="carousel-item active">
+        
+        
+      <div class="row" *ngFor="let pdetails of productdetails" style="float: left;">
+          
+          <div class="col-lg-4"  >
+              <div class="card" style="width: 18rem;">
+                <img [src]="pdetails.img" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{pdetails.pname}}</h5>
+                    <p class="card-text">{{pdetails.pdescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item active">
+        
+        
+      <div class="row" *ngFor="let pdetails of productdetails" style="float: left;">
+          
+          <div class="col-lg-4"  >
+              <div class="card" style="width: 18rem;">
+                <img [src]="pdetails.img" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">{{pdetails.pname}}</h5>
+                    <p class="card-text">{{pdetails.pdescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+    <p class="author">- John Keats</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+    <p class="author">- Ernest Hemingway</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+    <p class="author">- Thomas A. Edison</p>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  -->
+<!--
+  <div style="margin-top:10px;background-color: #f2f4f1;">
+    <h1 style="text-align: center; color:#1ABC9C;padding-top: 20px;padding-bottom: 10px;font-size: 32px; font-family: Montserrat, Arial, sans-serif;font-weight: 600;margin-top: -30px;">SERVICES</h1>
+    <h3 style="margin-left: 20px;color:#1ABC9C;margin-bottom:30px;">Feature Products</h3>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active"  style="background-color: #f2f4f1;">
+          
+          
+        <div class="card">
+          <div class="card-header">
+            Quote1
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+  
+            
+      </div>
+  
+      <div class="carousel-item active"  style="background-color: #f2f4f1;">
+          
+          
+        <div class="card">
+          <div class="card-header">
+            Quote
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+            
+      
+    </div>
+  
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+  
+      </div>
+  
+    </div>
+    -->
+
+    <!--review section-->
+    
+    <div style="background-image: url('http://www.fabstitch.in/wp-content/uploads/2014/03/twitter-showcase.jpg');">
+      <h3 style="text-align: center;padding-top: 50px;color:#fff">WHY CUSTOMERS GET EXCITED !</h3>
+      <div id="carouselExampleControls1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            
+            
+          <div class="card" style="margin-top: 50px;margin-left: 210px;margin-right: 200px;margin-bottom: 100px;">
+            <div class="card-header" style="text-align: center;">
+              Customer Review
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="padding-top:-100px;">
+                <p style="margin-top:20px; text-align: center;">Fabstitch stitching is really awesome. I am really impressed.</p>
+                <footer class="blockquote-footer" style="text-align: center;">Sushmitha &nbsp;<i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-regular fa-heart"></i><i class="fa-regular fa-heart"></i><cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>
+    
+              
+        </div>
+    
+        <div class="carousel-item " >
+            
+            
+          <div class="card" style="margin-top: 50px;margin-left: 210px;margin-right: 200px;margin-bottom: 100px;">
+            <div class="card-header" style="text-align: center;">
+              Customer Review
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="padding-top:-100px;">
+                <p style="margin-top:20px; text-align: center;">Great job Fabstitch team..It works as it says. Good luck.</p>
+                <footer class="blockquote-footer" style="text-align: center;">Antony &nbsp;<i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-regular fa-heart"></i><cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>
+    
+              
+        </div>
+
+        <div class="carousel-item " >
+            
+            
+          <div class="card" style="margin-top: 50px;margin-left: 210px;margin-right: 200px;margin-bottom: 100px;">
+            <div class="card-header" style="text-align: center;">
+              Customer Review
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0" style="padding-top:-100px;">
+                <p style="margin-top:20px; text-align: center;">Good Design and collections</p>
+                <footer class="blockquote-footer" style="text-align: center;">Karthik &nbsp;<i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><i class="fa-sharp fa-solid fa-heart"></i><cite title="Source Title"></cite></footer>
+              </blockquote>
+            </div>
+          </div>
+    
+              
+        </div>
+      </div>
+    
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev" style="margin-top:-250px; margin-left:880px;">
+                <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left fa-lg"></i></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next" style="margin-top: -250px;margin-right: 150px;">
+                <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-right fa-lg"></i></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+    
+        </div>
+      </div>
+      
+    
+    <!-- <br><br><br><br><br> -->
+    <div>
+    <div style="background-color:#1ABC9C;padding-bottom: 30px;margin-top: 150px;">
+      <p style="margin-left: 50px; color: white;">Copyright 2015 - 2022 © fabstitch.in  <a href="faq" style="padding-left: 400px;color: white;">FAQ</a> | <a href="terms" style="color: white;" >Terms Of Services</a> | <a href="privacy" style="color: white;">Privacy Policy</a> | Call us @ +91-9902953403</p>
+    </div>
+  </div>
+   

@@ -1,0 +1,44 @@
+.name {
+    margin-left: 118px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #5a6c7b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.btn-custom{
+    border:solid 2px #a9a9a9;
+    color:#babdbc;
+    border-radius: 6px;
+}
+.btn-custom:hover
+{
+    border:solid 2px #09a787;
+    color:#09a787;
+    border-radius: 6px;
+}
+.vl {
+    border-left: 2px solid #e6e7e8;
+    height: 4288px;
+    position: absolute;
+    left: 0%;
+    margin-left: -9px;
+    top: 0;
+  }
+  blockquote {
+    width: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5a6c7b;
+    background: #f8f9f8;
+    border-left: 10px solid #a1ddce;
+    font-style: italic;
+    margin-bottom: 35px;
+    padding-left: 35px;
+}
+

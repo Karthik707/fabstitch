@@ -1,0 +1,51 @@
+input {
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+label {
+    margin-left: 50px;
+}
+h4{
+    margin-left: 600px;
+
+}
+
+form {
+    padding: 10px;
+    margin-left: 130px;
+    margin-top: -10px;
+    width: 40%;
+    border-style: inset;
+    border-color: black;
+    
+}
+
+form:hover {
+    color:white;
+    background-color: #1ABC9C;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+    box-shadow: 0 14px 16px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+
+}
+
+button {
+    margin-left: 100px;
+}
+
+span {
+    width: 60%;
+    margin-left: 100px;
+}
+
+.formy{
+    width: 1000px;
+}
+
+p:hover{
+    color: white;
+}

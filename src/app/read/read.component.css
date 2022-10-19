@@ -1,0 +1,32 @@
+.name {
+    margin-left: 118px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #5a6c7b;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+.btn-custom{
+    border:solid 2px #a9a9a9;
+    color:#babdbc;
+    border-radius: 6px;
+}
+.btn-custom:hover
+{
+    border:solid 2px #09a787;
+    color:#09a787;
+    border-radius: 6px;
+}
+/* *{
+    color:#bdc8d1 ;
+} */
+.vl {
+    border-left: 2px solid #e6e7e8;
+    height: 3428px;
+    position: absolute;
+    left: 0%;
+    margin-left: -9px;
+    top: 0;
+  }

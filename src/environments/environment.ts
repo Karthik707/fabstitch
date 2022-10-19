@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  userapi:'https://localhost:7013/api/Registrations',
+  contactapi:'https://localhost:7122/api/Contacts',
+  checkoutapi:'https://localhost:7241/api/Checkouts',
+  cartapi:"http://localhost:3000/cart",
+  productapi:"http://localhost:3000/product",
 };
 
 /*

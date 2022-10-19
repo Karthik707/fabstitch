@@ -1,0 +1,129 @@
+
+<!--<section class="page-title" style="background-color: #f2f4f1;">
+    <div class="container" style="background-color: #f2f4f1;">
+        <div class="row" style="background-color: #f2f4f1;">
+            <div class="col" style="background-color: #f2f4f1;">
+				<h1><nav class="woocommerce-breadcrumb"><a style="color:#1ABC9C">Home</a><a style="color:grey">&nbsp;/&nbsp;Contact Us</a>&nbsp;</nav></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color:#f2f4f1;margin-bottom: -50px;">  
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+        <form action="">
+            <br><h3>Have Question?Feel free to contact us on +91-9902953403</h3>
+           <br>
+                <div class="field">
+                <div ></div>
+                    <label class="label">Your Name (required)</label><br>
+                     <input type="text" name="name" class="input" value size="40" required >
+                                   
+                   </div><br>
+                   <div class="field">
+                       <label class="label">Your Email (required)</label><br>
+                       <input type="email" name="email" class="input" value size="40"  required >                
+                   </div><br>
+                   <div class="field">
+                       <label class="label">Subject</label><br>
+                       <input type="text" name="Subject" class="input" value size="40"  required><br>               
+                   </div><br>
+                   <div class="field">
+                    <label class="label">Your Message</label><br>
+                    <textarea name="message" class="textarea" required value size="40" col="40" row="10" aria-required="true" aria-invalid="true" ></textarea>                
+                </div><br>
+                <div class="captcha">
+                            <p>Enter This Code <input type="hidden" name="_wpcf7_captcha_challenge_captcha-118" value="3263013339">
+                                <img class="wpcf7-form-control wpcf7-captchac wpcf7-captcha-captcha-118" width="84" height="28" alt="captcha" src="http://www.fabstitch.in/wp-content/uploads/wpcf7_captcha/4110872733.png"><br>
+                                <span class="wpcf7-form-control-wrap captcha-118">
+                                <input type="text" name="captcha-118" value="" size="4" maxlength="4" class="wpcf7-form-control wpcf7-captchar" autocomplete="off" aria-invalid="false"></span>
+                                </p>
+                </div>       
+                  
+                <button type="submit" class="button ">Send</button>
+        </form>
+    </div></div>
+</div>
+</section>
+
+
+<br><br><br><br>
+<div style="background-color:#1ABC9C;padding-bottom: 30px;">
+  <p style="margin-left: 50px;">Copyright 2015 - 2022 © fabstitch.in  <a href="/faq" style="padding-left: 400px;">FAQ</a> | <a href="/terms-of-services">Terms Of Services</a> | <a href="/privacy-policy">Privacy Policy</a> | Call us @ +91-9902953403</p>
+</div>
+
+-->
+
+
+
+
+
+
+
+<section class="page-title" style="background-color: #f2f4f1;">
+    <div class="container" style="background-color: #f2f4f1;">
+        <div class="row" style="background-color: #f2f4f1;">
+            <div class="col" style="background-color: #f2f4f1;">
+				<h1><nav class="woocommerce-breadcrumb"><a style="color:#1ABC9C">Home</a><a style="color:grey">&nbsp;/&nbsp;Contact Us</a>&nbsp;</nav></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color:#f2f4f1;margin-bottom: -50px;" >  
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-12" >
+        <form action="" [formGroup]="contactForm" (ngSubmit)="submitHandler()">
+            <br><h3>Have Question?Feel free to contact us on +91-9902953403</h3>
+           <br>
+                <div class="form-group">
+                <div ></div>
+                    <label class="label">Your Name (required)</label><br>
+                     <input type="text" name="name" class="input" value size="40" formControlName="username" placeholder="Enter Username" >
+                      <br>
+                     <label class="error ng-binding" *ngIf="submitted && f['username'].invalid" style="color: red;">Name is required
+                    </label>
+                   </div><br>
+                   <div class="form-group">
+                       <label class="label">Your Email (required)</label><br>
+                       <input type="email" name="email" class="input" value size="40"  formControlName="useremail" placeholder="Enter Email">                
+                       <br>
+                       <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid" style="color: red;">Email is required
+                    </label>
+                    </div><br>
+                   <div class="form-group">
+                       <label class="label">Subject</label><br>
+                       <input type="text" name="Subject" class="input" value size="40"  formControlName="subject" placeholder="Enter Subject"><br>               
+                       
+                       <label class="error ng-binding" *ngIf="submitted && f['subject'].invalid" style="color: red;">Subject is
+                        required</label>
+                    </div><br>
+                   <div class="form-group">
+                    <label class="label">Your Message</label><br>
+                    <textarea type="text" name="Subject" class="input" value size="40"  formControlName="message" placeholder="Enter Message"></textarea>                
+                    <br>
+                    <label class="error ng-binding" *ngIf="submitted && f['message'].errors?.['required']" style="color: red;">Message is
+                        required</label>
+                </div><br>
+                <!-- <div class="captcha">
+                            <p>Enter This Code <input type="hidden" name="_wpcf7_captcha_challenge_captcha-118" value="3263013339">
+                                <img class="wpcf7-form-control wpcf7-captchac wpcf7-captcha-captcha-118" width="84" height="28" alt="captcha" src="http://www.fabstitch.in/wp-content/uploads/wpcf7_captcha/4110872733.png"><br>
+                                <span class="wpcf7-form-control-wrap captcha-118">
+                                <input type="text" name="captcha-118" value="" size="4" maxlength="4" class="wpcf7-form-control wpcf7-captchar" autocomplete="off" aria-invalid="false"></span>
+                                </p>
+                </div>        -->
+                  
+                <button type="submit" class="button ">Send</button>
+        </form>
+    </div></div>
+</div>
+</section>
+
+
+<br><br><br><br>
+<div style="background-color:#1ABC9C;padding-bottom: 30px;">
+  <p style="margin-left: 50px; color: white;">Copyright 2015 - 2022 © fabstitch.in  <a href="faq" style="padding-left: 400px; color:white;">FAQ</a> | <a href="terms" style="color: white;">Terms Of Services</a> | <a href="privacy" style="color: white;">Privacy Policy</a> | Call us @ +91-9902953403</p>
+</div>

@@ -1,0 +1,71 @@
+.image{
+    height: 400px;
+    width: 1400px;
+ }
+
+ .btn1{
+    color: white;
+    background-color: orange;
+    margin-left: 500px;
+    margin-top: 30px;
+    font-size: larger;
+    font-weight: bolder;
+    
+    border-color: white;
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    
+    user-select: none;
+
+ }
+
+ .divider {
+    margin-bottom: 30px;
+    width: 1150px;
+    margin-top: 30px;
+    margin-left: 50px;
+    color:black;
+    size: 20px;
+    
+}
+.h11{
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #5b7890;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 0;
+    border: 0;
+  }
+  
