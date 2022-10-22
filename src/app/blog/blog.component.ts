@@ -15,4 +15,7 @@ export class BlogComponent implements OnInit {
   gotoread(){
     this.router.navigate(['read']);  // define your component where you want to go
   }
+  gototext(){
+    this.router.navigate(['text']);  // define your component where you want to go
+  }
 }

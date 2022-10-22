@@ -18,7 +18,7 @@
                         <div class="woocommerce-info" style="font-size:large;font-weight:bold;">
                             <br>
                               Returning customer? &nbsp;<a href="login" class="login">click here to login</a></div><div style="font-size:large;font-weight:bold;margin-bottom: 15px;">
-                                Go Back ?  &nbsp;<a href="" class="cart">Go to cart</a></div></div>
+                                Go Back ?  &nbsp;<a  class="cart" (click)="gotoorder()">Go to cart</a></div></div>
 
 
         <form action="" [formGroup]="checkoutForm" (ngSubmit)="submitHandler()" style="margin-bottom: 100px;">
@@ -116,7 +116,7 @@
     </div></div>
 </div></div>
 </section>
-
+<!-- <app-cartitem></app-cartitem> -->
 <div style="background-color: white;"><br><br><br><br>
   <div style="background-color: rgb(28, 174, 148);" class="row">
       <br><br><br>

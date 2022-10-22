@@ -4,5 +4,5 @@ export class Product {
     pdesc: string = '';
     price1: string = '';
     price:number | undefined;
-    img:string='';
+    // img:string='';
 }

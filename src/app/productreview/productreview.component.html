@@ -1,0 +1,90 @@
+<nav class="navbar navbar-dark " style="margin-top: 40px;background-color: #f2f4f1;">
+    <div class="container-fluid">
+      <h1 style="color: aliceblue; font-size: 20px;margin-left: 400px; color: #1ABC9C;">Product Reviews</h1>
+      <div class="d-flex">
+       
+        <button (click)="clickAddProduct()" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right:20px ;background-color: #1ABC9C;;">
+          Add <i class="fa-solid fa-star"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">Product ID</th> -->
+        <th scope="col"></th>
+        <th scope="col">Customer <i class="fa-solid fa-stars"></i></th>
+        <th scope="col">Review</th>
+        <th scope="col">Ratings</th>
+        <!-- <th scope="col">Product Image</th> -->
+        <!-- <th scope="col">Action</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productData" class="car">
+        <!-- <td>{{product.id}}</td> -->
+        <td><img
+            src="http://1.gravatar.com/avatar/dc83382269945ab34bb1c31ef90c7a3b?s=120&d=mm&r=g"
+          /></td>
+        <td>{{product.pname}}</td>
+        <td>{{product.pdescription}}</td>
+        <td>{{product.price}} <i class="fa-solid fa-star"></i></td>
+        <!-- <td>
+          <img [src]="product.img" class="prodimg">
+        </td> -->
+        <!-- <td>
+          <button (click)="onEdit(product)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-pen"></i>
+          </button>&nbsp;
+          <button (click)="deleteProducts(product)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+        </td> -->
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Product details</h5> -->
+          <img src="http://www.fabstitch.in/wp-content/uploads/2015/01/logof.png" alt="">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label class="form-label">Your Name</label>
+              <input type="pname" class="form-control" formControlName="pname">
+              <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['pname'].errors?.['required']">Name is required
+              </label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Review</label>
+              <input type="pdescription" class="form-control" formControlName="pdescription">
+              <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['pdescription'].errors?.['required']">Review is required
+              </label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your Rating (out of 5)</label>
+              <input type="price" class="form-control" formControlName="price">
+              <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['required']">Rating is required
+              </label>
+              <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['price'].errors?.['pattern']">Rating should be in numbers</label>
+            </div>
+            <!-- <div class="mb-3">
+              <label class="form-label">Image</label>
+              <input type="img" class="form-control" formControlName="img">
+              <label style="color: red;" class="error ng-binding" *ngIf="submitted && f['img'].errors?.['required']">Image is required</label>
+            </div> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd" (click)="postProductDetails()" class="btn btn-primary" style="background-color: #1ABC9C;">Add Review</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateProductDetails()" class="btn btn-warning" style="background-color: #1ABC9C;">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

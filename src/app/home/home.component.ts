@@ -15,6 +15,16 @@ export class HomeComponent implements OnInit {
   bookstitch(){
     this.router.navigate(['bookstitch']);  // define your component where you want to go
 }
+gotofaq(){
+  this.router.navigate(['faq'])
+}
+gotoprivacy(){
+  this.router.navigate(['privacy'])
+}
+gototerms(){
+  this.router.navigate(['terms'])
+}
+
 
   productdetails = [
     {

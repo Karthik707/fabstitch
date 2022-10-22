@@ -15,6 +15,7 @@ import { LehangaComponent } from './lehanga/lehanga.component';
 import { LoginComponent } from './login/login.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { ProductComponent } from './product/product.component';
+import { ProductreviewComponent } from './productreview/productreview.component';
 import { ReadComponent } from './read/read.component';
 import { RecentComponent } from './recent/recent.component';
 import { RegisterComponent } from './register/register.component';
@@ -46,7 +47,8 @@ const routes: Routes = [
   {path:'checkout',component:CheckoutComponent},
   {path:'about',component:AboutusComponent},
   {path:'privacy',component:PrivacypolicyComponent},
-  {path:'terms',component:TermsofservicesComponent}
+  {path:'terms',component:TermsofservicesComponent},
+  {path:'review',component:ProductreviewComponent}
 ];
 
 @NgModule({

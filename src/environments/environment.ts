@@ -9,6 +9,7 @@ export const environment = {
   checkoutapi:'https://localhost:7241/api/Checkouts',
   cartapi:"http://localhost:3000/cart",
   productapi:"http://localhost:3000/product",
+  postsapi:"http://localhost:3000/posts"
 };
 
 /*

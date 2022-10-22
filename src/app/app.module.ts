@@ -29,6 +29,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { TermsofservicesComponent } from './termsofservices/termsofservices.component';
+import { ProductreviewComponent } from './productreview/productreview.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { TermsofservicesComponent } from './termsofservices/termsofservices.comp
     CheckoutComponent,
     AboutusComponent,
     PrivacypolicyComponent,
-    TermsofservicesComponent
+    TermsofservicesComponent,
+    ProductreviewComponent
   ],
   imports: [
     BrowserModule,

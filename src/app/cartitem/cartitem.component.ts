@@ -26,26 +26,7 @@ export class CartitemComponent implements OnInit {
     totalPrice:1 ,
     subtotal:1   
   }
-/*
-  addToCart(product:any){
-    this.cart.pname=product.pname;
-    this.cart.pdesc=product.pdesc;
-    this.cart.price=product.price;
-    this.cart.img=product.img;
-    this.cart.price=product.price;
-    this.cart.totalPrice=product.totalPrice;
-    this.cart.quantity=this.quantity;
-    this.cart.id=product.id;
-    this.cartsvc.addToCart(this.cart);
-    console.log(product.id);
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top',
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-    })
-    */
+
   // quanties:number=0;
   cartData: any = [];
   totalprice: number = 0;
@@ -58,20 +39,7 @@ export class CartitemComponent implements OnInit {
 
   
  
-  // receivequantity($event: number) {
-  //   this.quantity = $event;
-  // }
-  // totalPrices(data: any) {
-  //   debugger
-  //   this.totalprice = 0;
-  //   this.cartData = data
-  //   console.log(this.cartData);
-  //   for (let j = 0; j < data.length; j++) {
-  //     this.totalprice += (this.cartData[j].price + this.cartData[j].quantity)
-  //     console.log(this.cartData[j].quantity)
-  //   }
-  //   return this.totalprice;
-  // }
+  
 
   subtotal(data: any) {
     debugger
@@ -89,16 +57,7 @@ export class CartitemComponent implements OnInit {
     return a;
   }
   cart: Cartitem[] = [];
-  // updateToCart(cart: Cartitem) {
-  //   console.log(this.quantity)
-  //   this.carts.id = cart.id;
-  //   this.carts.totalPrice=(cart.price * this.quantity);
-  //   this.carts.quantity = this.quantity;
-  //   this.cartSvc.updateCart(this.cart).subscribe(
-  //     () => console.log("update successfully")
-  //   )
-  //   this.ngOnInit();
-  // }
+  
   delete(deleteItem: Cartitem) {
     this.cartSvc.removeItemFromCart(deleteItem).subscribe(
       () => console.log(deleteItem.pname)      

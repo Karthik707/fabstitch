@@ -11,8 +11,8 @@
     {
       "id": 2,
       "pname": "Blouse Stitch",
-      "price": 1500,
-      "price1": "Rs.50-Rs.3000",
+      "price": 500,
+      "price1": "Rs.50-Rs.300",
       "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitching.",
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Blouse-200x200.jpg"
     },
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "pname": "Lehenga Stitch",
-      "price": 5000,
+      "price": 500,
       "price1": "Price On Call",
       "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Lehenga stitch.",
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/lehenga-200x200.jpg"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "pname": "Designer Blouse stitching",
-      "price": 2500,
+      "price": 1500,
       "price1": "Price On Call",
       "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitch.",
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/womens-cloth-stitching-11-200x200.png"
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "pname": "Western Wear Stitch",
-      "price": 3000,
+      "price": 800,
       "price1": "Rs.2000-Rs.5000",
       "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Western wear stitch",
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png"
@@ -51,13 +51,31 @@
     {
       "id": 7,
       "pname": "Alteration services",
-      "price": 800,
-      "price1": "Rs.100-Rs.2000",
+      "price": 400,
+      "price1": "Rs.100-Rs.300",
       "pdesc": "Backed by our skilled professionals, we are involved in providing Alteration Stitching Service for various dresses",
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/11/Sewing-and-Alteration-150x150.jpg"
     }
   ],
   "cart": [
+    {
+      "id": 5,
+      "pname": "Designer Blouse stitching",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitch.",
+      "price": 1500,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/womens-cloth-stitching-11-200x200.png",
+      "quantity": 1,
+      "subtotal": 1
+    },
+    {
+      "id": 3,
+      "pname": "Salwar suit Stitch",
+      "pdesc": "Being one of the renowned firms in the industry, we involved in providing a high-quality array of salwar stitching.",
+      "price": 1000,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Anarkali-Custmized-200x200.jpg",
+      "quantity": 1,
+      "subtotal": 1
+    },
     {
       "id": 1,
       "pname": "Kids Wear Stitch",
@@ -66,24 +84,36 @@
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/09/tutu-dress-150x150.jpg",
       "quantity": 1,
       "subtotal": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": 10,
+      "pname": "Siri",
+      "pdescription": "Good product ",
+      "price": "5",
+      "img": ""
     },
     {
-      "id": 2,
-      "pname": "Blouse Stitch",
-      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitching.",
-      "price": 1500,
-      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Blouse-200x200.jpg",
-      "quantity": 1,
-      "subtotal": 1
+      "id": 11,
+      "pname": "Karthik",
+      "pdescription": "Good product highly recommended",
+      "price": "4",
+      "img": ""
     },
     {
-      "id": 6,
-      "pname": "Western Wear Stitch",
-      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Western wear stitch",
-      "price": 3000,
-      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png",
-      "quantity": 1,
-      "subtotal": 1
+      "id": 12,
+      "pname": "Naruto",
+      "pdescription": "Wow Amazing products and price",
+      "price": "4",
+      "img": ""
+    },
+    {
+      "id": 13,
+      "pname": "karthik",
+      "pdescription": "good",
+      "price": "4",
+      "img": ""
     }
   ]
 }

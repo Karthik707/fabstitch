@@ -24,6 +24,9 @@ export class CheckoutComponent implements OnInit {
   submitted = false;
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) { }
 
+  gotoorder(){
+    this.router.navigate(['order'])
+  }
   ngOnInit(): void {
     this.checkoutForm = this.formBuilder.group({
       name: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]],
